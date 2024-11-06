@@ -1232,3 +1232,13 @@ body.active { overflow: hidden; }
 
 /*.conhecimentos-main {background-color: #f3f3f3; padding-top: 80px; /* Adiciona espaçamento para o conteúdo não ficar atrás do menu fixo */ /*min-height: calc(100vh - 80px); /* Garante que o conteúdo cubra pelo menos a altura da viewport  }*/
 
+.sobre{
+  display: flex; justify-content: center; align-items: center; background-color: #dededed5; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 80%; /* Ajuste a largura conforme necessário */ margin: 0 auto; /* Centraliza o texto */ text-align: left;
+  font-size: 1.7rem;
+}
+
+.sob{
+  display: block; margin: 20px auto; /* Centraliza a imagem dentro do texto */ border-radius: 50%; /* Deixa a imagem em formato circular, opcional */ max-width: 150px;
+}
