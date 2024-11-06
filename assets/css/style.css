@@ -498,17 +498,41 @@ body.active { overflow: hidden; }
   #RECENT POST
 \*-----------------------------------*/
 
-.top-author { display: none; }
+.top-author { display: none; text-align: center;}
 
-.recent { padding-block-start: 15px; }
+.recent { padding-block-start: 15px; text-align: center; }
 
-.recent .section-title .strong { display: block; }
+.recent .section-title .strong { display: block; text-align: center; }
 
-.recent .section-title { margin-block-end: 20px; }
+.recent .section-title { margin-block-end: 20px; text-align: center; }
 
 .recent .btn {
   margin-inline: auto;
   margin-block: 50px 30px;
+  text-align: center;
+}
+
+.title-wrapper {
+  text-align: center;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ajuste conforme necessário */
+  text-align: center;
+}
+
+
+.conhecimentos
+{
+  text-align: center;
+  font-size: 4.0rem;        /* Aumenta o tamanho da fonte */
+  font-weight: bold;       /* Deixa a fonte em negrito */
+  color: #000000;          /* Define a cor do texto (ajuste para o verde desejado) */
+  letter-spacing: 1px;     /* Aumenta o espaçamento entre letras */
+  font-family: Arial, sans-serif; /* Escolha uma fonte similar à da imagem */
 }
 
 
@@ -559,6 +583,10 @@ body.active { overflow: hidden; }
 
 .footer .logo { margin-block-end: 25px; }
 
+
+.logo{
+  display: flex; justify-content: center; /* Centraliza horizontalmente */ align-items: center;
+}
 .footer-text {
   font-size: var(--fs-5);
   font-weight: var(--fw-500);
@@ -568,17 +596,21 @@ body.active { overflow: hidden; }
 .footer-list .h5 {
   font-weight: var(--fw-700);
   margin-block-end: 15px;
+  justify-content: start;
 }
 
 .footer-list-item {
   display: flex;
   align-items: center;
   gap: 8px;
+  text-align: center;
+  justify-content: start;
 }
 
 .footer-list-item ion-icon {
   font-size: 18px;
   flex-shrink: 0;
+  justify-content: flex-start;
 }
 
 .footer-link {
@@ -767,6 +799,7 @@ body.active { overflow: hidden; }
     display: flex;
     justify-content: space-between;
     margin-block-end: 10px;
+    margin-left: 3.6rem;
   }
 
   .top-author .avatar-item:not(:first-child) { margin-inline-end: -25px; }
@@ -1053,3 +1086,149 @@ body.active { overflow: hidden; }
   }
 
 }
+
+
+
+.container {
+  text-align: center;
+  font-size: 2.0rem;
+}
+
+
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #dededed5;
+  border-radius: 10px;
+  padding: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.card img {
+  width: 80px;
+  margin-bottom: 15px;
+  display: flex; 
+  margin: 0 auto;
+  max-width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover
+{
+  background-color: #cfcfcf;
+}
+
+.card h2 {
+  font-size: 1.2em;
+  margin: 16px 2;
+}
+
+.card p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #000000;
+  font: bold;
+}
+
+.linha-fina { border: none; border-top: 1px solid #ccc; /* Cor e espessura da linha */ margin: 20px 0; /* Espaçamento acima e abaixo da linha */ }
+
+
+/*CONTATOSSSS*/
+.contato-container {
+  width: 300px; /* Ajuste conforme necessário */
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.contato-container h1 {
+  margin-bottom: 20px;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 2.0rem;
+}
+
+
+.contato-item a:hover {
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: rgb(252, 235, 235);
+  
+}
+
+.contato-item img.icone {
+  width: 30px;
+  height: auto; 
+  margin-right: 10px; 
+  transition: filter 0.3s ease; /* Transição suave para a cor do ícone */}
+.contato-item img {
+  width: 30px; /* Ajuste a largura da imagem conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-right: 10px;
+}
+
+.contato-item a:hover img.icone { filter: brightness(0.5); /* Escurece o ícone ao passar o mouse */}
+
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 2px solid #25D366;
+  color: #25D366;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.whatsapp-button img {
+  width: 30px; /* Ajuste a largura da imagem conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-right: 5px;
+}
+
+.whatsapp-button:hover {
+  background-color: #25D366;
+  color: white;
+}
+
+
+.social-icons{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+
+}
+.social-icons .instagram:hover { filter: invert(23%) sepia(80%) saturate(6647%) hue-rotate(336deg) brightness(92%) contrast(118%); }
+.social-icons img.icon { width: 30px; height: auto; }
+
+.social-icons a:hover { transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */ }
+
+.social-icons .github:hover { filter: brightness(0.5); /* Escurece o ícone */ }
+
+.social-icons .twitter:hover { filter: invert(40%) sepia(93%) saturate(503%) hue-rotate(82deg) brightness(95%) contrast(92%); /* Muda o ícone para verde */ }
+.social-icons .linkedin:hover { filter: invert(23%) sepia(95%) saturate(3985%) hue-rotate(178deg) brightness(91%) contrast(91%); /* Muda o ícone para azul */ }main { padding-top: 80px; /* Adiciona espaçamento para o conteúdo não ficar atrás do menu fixo */ }
+
+.direitos{
+  text-align: left;
+}
+
+
+/*.conhecimentos-main {background-color: #f3f3f3; padding-top: 80px; /* Adiciona espaçamento para o conteúdo não ficar atrás do menu fixo */ /*min-height: calc(100vh - 80px); /* Garante que o conteúdo cubra pelo menos a altura da viewport  }*/
+
